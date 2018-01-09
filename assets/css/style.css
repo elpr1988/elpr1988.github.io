@@ -5,7 +5,6 @@
 body {
 	background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");
 	font-family: "Georgia", "Times New Roman", Times, serif;
-	color: #777777;
 	margin: 0;
 }
 
@@ -37,13 +36,17 @@ header {
 
 }
 
-#heading {
+h2 {
 	margin-top: 0;
 	padding: 20px;
 	padding-left: 0;
 	color: #4aaaa5;
 	border-bottom: 2px solid #dddddd;
 	text-align: left;
+}
+
+h3, p, form {
+	color: #777777;
 }
 
 #link {
@@ -54,11 +57,13 @@ header {
 	text-decoration: none;
 }
 
-a {
-	color: #cccccc;
+.img-title {
+	border-right: 1px solid;
+	color: #ffffff;
+	padding-right: 5px;
+	padding-left: 5px;
 	text-decoration: none;
 }
-
 .section {
 	background: #ffffff;
 	float: left;
@@ -101,32 +106,47 @@ a {
 	text-align: center;
 }
 
-.gallery {
-  position: relative;
-  float: left;
-  margin: 20px 0 25px;
+.overlay {
+	position: absolute;
+	bottom: 3%;
+	left: 100%;
+	right: 0;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	overflow: hidden;
+	width: 0;
+	height: 20%;
+	transition: .5s ease;
+  }
+
+.image1, .image3, .image5  {
+	position: relative;
+	display: inline-block;
+	margin-top: 20px;
+	width: 281px;
 }
+  
+.image2, .image4 {
+	position: relative;
+	float: right;
+	margin-top: 20px;
+	width: 281px;
+ }
 
-.gallery h3 {
-  position: absolute;
-  bottom: 20px;
-  right: 15px;
-  width: 210px;
-  padding: 15px;
-  font-weight: 300;
-  line-height: 30px;
-  color: #fff;
-  text-align: center;
-  background: #4aaaa5;
+ .image1:hover .overlay,
+ .image2:hover .overlay, 
+ .image3:hover .overlay, 
+ .image4:hover .overlay, 
+ .image5:hover .overlay {
+	width: 100%;
+	left: 0;
 }
-
-
-.images {
-	float: left;
-	width: 240px;
-	height: 230px;
-	padding: 15px;
-	margin-left: 40px;
+  
+.portfolio-pics {
+	display: block;
+	height: 281px;
+	width: 281px;
 }
 
 .aside {
