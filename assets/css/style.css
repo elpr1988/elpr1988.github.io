@@ -17,10 +17,8 @@ header {
 
 .YourName {
 	position: absolute;
-	height: 70px;
-	margin: 0;
-	top: 0;
-	left: 10%;
+	height: 100%;
+	left: 20%;
 	background: #4aaaa5;
 	color: #ffffff;
 	text-align: center;
@@ -36,7 +34,7 @@ header {
 
 }
 
-h2 {
+h2, h3 {
 	margin-top: 0;
 	padding: 20px;
 	padding-left: 0;
@@ -45,7 +43,7 @@ h2 {
 	text-align: left;
 }
 
-h3, p, form {
+p, form {
 	color: #777777;
 }
 
@@ -178,4 +176,7 @@ footer {
 #Copyright {
 	margin-top: 30px;
 	text-align: center;
+}
+
+@media screen and (max-width: 980px) {
 }
