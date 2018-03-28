@@ -110,7 +110,7 @@ p, form {
 	text-align: center;
 	overflow: hidden;
 	width: 0;
-	height: 20%;
+	height: 90px;
 	transition: .5s ease;
   }
 
